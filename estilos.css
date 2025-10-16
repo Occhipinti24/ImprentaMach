@@ -1,0 +1,245 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e2c3a;
+    color: #ffffff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 40px;
+    background: #f8f8f8;
+}
+
+.logo {
+    width: 50x;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.search input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #0077ff;
+}
+
+.icons {
+    font-size: 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 600px;
+    height: 250px;
+    margin: 0 auto 20px auto;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #ffffff;
+    font-family: Candara Light;
+}
+
+/* GALERÍA */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+}
+
+.card {
+    width: 200px;
+    height: 120px;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+/*Formulario Login*/
+.FormularioLogin{
+    border: 6px solid, rgba(0, 154, 168, 0.74);
+    border-style: groove;
+    margin: 100px;
+    margin-left: 550px;
+    text-align: center;
+    width: 750px;
+    height: 300px;
+}
+
+h1{ font-family:Old English Text MT;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+p1{ font-family: Candara Light;
+
+}
+
+
+.formularioL{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Candara Light;
+    font-size: large;
+}
+
+input[type=text] {
+  width: 250px;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid lab(55.35% 2.63 0.93);
+  border-radius: 8px;
+}
+
+input[type=password] {
+  width: 250px;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid lab(55.35% 2.63 0.93);
+  border-radius: 8px;
+}
+
+  button[type=submit] {
+  border: none; 
+  color: rgb(0, 0, 0); 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+ button[type=reset] {
+  border: none; 
+  color: rgb(3, 3, 3); 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+ hr{margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+/*Formulario Contact */ 
+
+h2{
+    font-family: Candara Light;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.contact-bodycontact.html{ /* fondo*/
+    font-family: Arial, sans-serif;
+    background: #1e2c3a;
+    color: #ffffff;
+}
+
+.FormularioContacto form{/* formulario completo  */
+    width: 1400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    justify-content: center; 
+    align-items: center;   
+    height: 500px;
+    margin-left: 230px;
+}
+
+.FormularioContacto form .campo,textarea{
+    width: 50%;
+    padding:15px 10px ;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.FormularioContacto .container form .input{
+ background-color: #007BFF; 
+  color: white;            
+  padding: 12px 20px;     
+  font-size: 16px;           
+  border: none;              
+  border-radius: 5px; 
+}
+
+.FormularioContacto h3{/* datos de contacto title */
+    text-align: center;
+    margin-top: 30px;
+}
+  
+h3{
+    font-family: Candara Light;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.FormularioContacto button[type=submit] {
+  border: none; 
+  color: rgb(0, 0, 0); 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+/* Footer */
+.footer{
+    margin-top: 800px;
+    background-color:  #333333;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer-redes{
+    margin-bottom: 10px;
+}
+
+.footer-redes .icono img{
+    width: 40px; /*tamaño del icono*/
+    margin: 0 10px;/*espacio entre los iconos*/
+    transition: transform 0.3s, opacity 0,3a;
+}
+
+.footer-redes .icono img:hover{
+    transform: scale(1.2); /*efecto al pasar el mouse*/
+    opacity: 0.8;
+}
+
+p2{
+    font-family: Candara Light;
+    font-size: large;
+}
