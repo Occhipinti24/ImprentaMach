@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto_MACH</title>
+        <title>Contactos</title>
         <link rel="stylesheet" href="estilos.css">
 </head> 
 <body class="contact">
@@ -17,7 +17,7 @@
             <a href="index.html">INICIO</a>
             <a href="#">PRODUCTOS</a>
             <a href="contact.html">CONTACTO</a>
-            <a href="clientes.html">CLIENTES</a>
+            <a href="indexClientes.html">CLIENTES</a>
         </nav>
 
         <div class="icons2">
@@ -30,19 +30,48 @@
 
      <h1>CONTACTO</h1>
 
+    <section id="formulariocontacto">
+  <form id="form-contacto" action="#" autocomplete="off">
+    <input type="text" name="nombre" placeholder="Ingrese su nombre" class="campo">
+    <input type="email" name="email" placeholder="Ingrese su correo" class="campo">
+    <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+    <input type="submit" name="enviar" value="Enviar mensaje" class="btn_enviar">
+  </form>    
+</section>
 
-      <section class="FormularioContacto">
-        
-        <form action="#" autocomplete="off">
-      <input type="texto" name="nombre"
-      placeholder="Ingre su nombre" class="campo">
-      <input type="email" name="email"
-      placeholder="Ingrese su correo" class="campo">
-      <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
-      <input type="submit" name="enviar" value="enviar mensaje"
-      class="btn_enviar">
-        </form>    
-      </section>
+<script>
+  const formulariocontacto = document.getElementById("form-contacto");
+
+  formulariocontacto.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const confirmar = prompt("¿Deseas enviar el mensaje? (sí / no)");
+
+    if (confirmar && confirmar.toLowerCase() === "si") {
+      alert("✅ Mensaje enviado con éxito");
+      formulariocontacto.reset();
+    } else {
+      alert("❌ Envío cancelado");
+    }
+  });
+</script>
+
+      <h2> DATOS DE CONTACTO </h2>
+      <section class="contacto2">
+         <div class="info">
+             <p>💬 <strong>WhatsApp:</strong> 
+              <a href="https://wa.me/5491112345678" target="_blank">11000000</a>
+             </p>
+             <p>✉️ <strong>Email:</strong> 
+              <a href="mailto:contacto@tusitio.com">xxxxo@xxxx.com</a>
+             </p>
+         </div>
+         
+   <div class="mapa-cuadrada">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8402206481383!2d-58.33858712635542!3d-34.709209763073474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3328e73393c79%3A0x2cfbc407905515fa!2sCotagaita%201151%2C%20B1875DSW%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1760542121425!5m2!1ses-419!2sar"></iframe>
+  </div>
+
+   </section>
 
     <footer class="footer">
         <p2>Contactanos a traves de</p2>

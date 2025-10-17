@@ -41,7 +41,6 @@ header {
   transition: all 0.3s ease;
 }
 
-/* efecto cuando el usuario hace clic en la barra */
 .search-bar:focus {
   width: 400px;         
   outline: none;      
@@ -133,7 +132,6 @@ nav a:hover {
     background: #ddd;
     border-radius: 8px;
 }
-
 /*Formulario Login*/
 .FormularioLogin{
     border: 6px solid, rgba(0, 154, 168, 0.74);
@@ -153,7 +151,6 @@ h1{ font-family:Old English Text MT;
 p1{ font-family: Candara Light;
 
 }
-
 
 .formularioL{
     margin-top: 20px;
@@ -203,9 +200,15 @@ input[type=password] {
 /*Formulario Contact */ 
 
 h2{
-    font-family: Candara Light;
-    text-align: center;
-    margin-top: 90px;
+  width: 60%;                      
+  margin: 40px auto;                
+  font-size: 2rem;
+  padding-bottom: 10px;
+  gap: 50px;    
+  margin-top: 60px;       
+  display: flex;
+   border-bottom: 2px solid white; /* línea blanca */
+  
 }
 
 .contact-bodycontact.html{ /* fondo*/
@@ -214,7 +217,7 @@ h2{
     color: #ffffff;
 }
 
-.FormularioContacto form{/* formulario completo  */
+#formulariocontacto form{/* formulario completo  */
      border: 6px solid transparent;
      border-radius: 10px;
      background:
@@ -230,7 +233,7 @@ h2{
     margin-left: 230px;
 }
 
-.FormularioContacto form .campo,textarea{
+#formulariocontacto form .campo,textarea{
     width: 50%;
     padding:15px 10px ;
     border: 1px solid #dbdbdb;
@@ -238,7 +241,7 @@ h2{
     border-radius: 3px;
 }
 
-.FormularioContacto .container form .input{
+#formulariocontacto .container form .input{
  background-color: #007BFF; 
   color: white;            
   padding: 12px 20px;     
@@ -247,9 +250,65 @@ h2{
   border-radius: 5px; 
 }
 
-.FormularioContacto h3{/* datos de contacto title */
+#formulariocontacto h3{/* datos de contacto */
     text-align: center;
     margin-top: 30px;
+}
+.contacto2 {
+   padding-top: 0.5%; 
+    display: flex;
+  justify-content: center;     
+  align-items: center;        
+  gap: 3%;                    
+  flex-wrap: wrap;            
+  padding: 2%;
+  border-radius: 1%;
+}
+.info p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  border-bottom: 2px solid white; /* línea blanca debajo */
+  padding-bottom: 8px;            /* espacio entre texto y línea */
+  margin-bottom: 10px;
+}
+.info {
+ width: 30%;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.mapa-cuadrada {
+  position: relative;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  display: flex;              
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-cuadrada iframe {
+ width: 100%;   
+  height: 100%;
+  border: 0;
+  border-radius: 2%;
+} 
+.contacto .info {
+  display: flex;          
+  align-items: flex-start; 
+  justify-content: space-between;
+  gap: 20px;              
+  flex-wrap: nowrap;       
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.contacto2 iframe {
+  flex: 2;                    
+  max-width: 100%;
+  border-radius: 10px;
 }
   
 h3{
@@ -265,7 +324,7 @@ h3{
     cursor: pointer; 
     border-radius: 5px; 
 }
-
+/* Fin contacto */
 /* Footer */
 .footer{
     margin-top: 800px;
@@ -293,3 +352,21 @@ p2{
     font-family: Candara Light;
     font-size: large;
 }
+.clientes img {
+  width: 20%;
+  height: auto;
+  display: block; 
+  border: 4px solid white;
+  border-radius: 10px;  
+  margin-bottom: 2px; 
+}
+
+/* apartado clientes*/
+
+.clientes{
+  margin-top: 5px; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+}  
