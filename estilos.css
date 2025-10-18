@@ -355,27 +355,71 @@ p2{
 
 /*Apartado clientes */
 
-.clioentesReseña{
-  border-style: solid 
-
+#SubtituloClientes{
+  text-align: center;
+  margin-top: auto;
+  font-size:larger;
 }
 
-.clientesReseña img {
-  width: 10%;
+.clientesReseña{
+  border-style: solid;
+  border: 3%;
+  width: 25%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.clientesReseña img{
+  width: 50%;
   display: block; 
-  border: 4px solid white;
+  border: 4px solid rgb(0, 0, 0);
   border-radius: 10px;  
   margin-bottom: 5%;
-  margin-left: 5%; 
+  margin-left: 25%; 
   margin-top: 5%; 
-  display:block;
   align-items: center;
   text-align: center;
   flex-direction: column; 
 }  
 
 .Opinion{
-  margin-left: 5%; 
+  margin-left: auto;
+  text-align:center;
   
 
 }
+
+.clientesColumna2{
+  border-style: solid;
+  border: 3%;
+  width: 25%;
+  margin-left: 71%;
+  margin-bottom: 3%;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  
+}
+
+
+.clientesColumna2 img{
+  width: 50%;
+  display: block; 
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;  
+  margin-bottom: 5%;
+  margin-left: 25%; 
+  margin-top: 5%; 
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+}  
+
+.OpinionColumna2{
+  margin-left: auto;
+  text-align:center;
+
+}
+
