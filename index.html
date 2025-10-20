@@ -10,20 +10,16 @@
     <!-- HEADER -->
     <header>
         <div><img src="Imagen logo/Mach.png" alt="Logo" class="logo"></div>
-        <div class="search">
-           <input type="search" class="search-bar" placeholder="🔍 Buscar..."> <!--Buscador-->
+        <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Buscar...">
         </div>
 
         <nav>
             <a href="index.html">INICIO</a>
-            <a href="#">PRODUCTOS</a>
             <a href="contact.html">CONTACTO</a>
             <a href="indexClientes.html">CLIENTES</a>
         </nav>
 
-        <div class="icons2">
-            <a href="#">🛒</a>
-        </div>
         <div class="icons">
             <a href="indexLogin.html" class="btn-login">👤 Iniciar sesión</a>
         </div>
@@ -32,8 +28,10 @@
     <!-- HERO -->
     <section class="hero">
         <h1>MACH</h1>
-        <p>
-            MACH es una imprenta desde 1984
+          <p>
+          Bienvenidos a MACH, tu imprenta de confianza.
+          Ofrecemos soluciones rápidas, creativas y de calidad para todos tus proyectos gráficos.
+           ¡Imprimí tus ideas con nosotros! 
         </p>
     </section>
     
@@ -48,14 +46,22 @@
     </section>
     
     <!-- GALERÍA -->
-    <section class="gallery">
-        <img src="imagenes inicio/img1.jpeg" alt="Producto1"
-         class="card">
-         <img src="imagenes inicio/img2.jpeg" alt="Producto2"
-         class="card">
-         <img src="imagenes inicio/img3.jpeg" alt="Producto3"
-         class="card">   <!--para regular el tamaño de todas las imagenes-->
-    </section>
+   <section class="gallery">
+  <div class="image-card">
+    <p class="gallery-text">ANILLADOS</p>
+    <img src="imagenes inicio/img1.jpeg" alt="Producto1" class="card">
+  </div>
+
+  <div class="image-card">
+    <p class="gallery-text">TARJETAS</p>
+    <img src="imagenes inicio/img2.jpeg" alt="Producto2" class="card">
+  </div>
+
+  <div class="image-card">
+    <p class="gallery-text">FOTOCOPIAS</p>
+    <img src="imagenes inicio/img3.jpeg" alt="Producto3" class="card">
+  </div>
+</section>
 
 
    <!--Footer y Marketing-->
@@ -63,7 +69,7 @@
   <div class="footer-container">
     <!-- IZQUIERDA -->
     <div class="footer-left">
-      <h3>Estamos<br><span>cerca tuyo</span></h3>
+      <h3> Nuestras Redes <br>
       <div class="footer-redes">
   <a href="https://www.instagram.com/imprentamach?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
@@ -89,19 +95,13 @@
       </p>
     </div>
 
-    <!-- DERECHA -->
-    <div class="footer-right">
-      <ul>
-        <li><a href="#">PRODUCTOS</a></li>
-        <li><a href="clientes.html">CLIENTES</a></li>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="contact.html">CONTACTO</a></li>
-        
-      </ul>
-    </div>
+   
+     
+    <div class="image-card">
+    <img src="imagenes inicio/img4Arca.jpg" class="card">
   </div>
+<!-- Caca -->
+
 </footer>
-
-
 </body>
 </html>

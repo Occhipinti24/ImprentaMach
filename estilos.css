@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #1e2c3a;
+   background: linear-gradient(180deg, rgb(16, 19, 49), #191f58, rgb(52, 36, 139));
     color: #ffffff;
 }
 
@@ -16,8 +16,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5% 3.3%;
+    padding: 3px 40px;
     background: #f8f8f8;
+
 }
 
 .logo {
@@ -25,65 +26,64 @@ header {
     height: 4.1%;
     border-radius: 0.7%;
 }
-
-.search input {
-    padding: 3% 3%;
-    border-radius: 5%;
-    border: 5% solid #ccc;
-    margin-left:0%;
+/* Barra de búsqueda */
+.search {
+   display: flex;
+  justify-content: start; /* o 'flex-start' si fuera flexbox */
+  padding: 20px;
 }
+
 .search-bar {
-  width: 18vw;             
-  padding: 10px 15px;  
-  font-size: 16px;      
-  border: 2px solid #007bff; /*EDITAR BARRA BUSQUEDA */
-  border-radius: 20px;   
-  transition: all 0.3s ease;
+  width: 90%;                
+  height: 1vw;
+  
+  font-size: 1.2vw;
+  border-radius: 20vw;      
 }
 
 .search-bar:focus {
-  width: 24vw;         /*EDITAR BARRA BUSQUEDA */
-  outline: none;      
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+  box-shadow: 0 0 0.8vw rgba(0, 123, 255, 0.5);
 }
 /* boton de inicio sesion */
 
 .btn-login {
-  display: inline-block;
+  display: inline-flex;
   background-color: #007bff;
   color: white;
   text-decoration: none;
   border: none;
-  padding: 1% 1.6%;
-  font-size: 1vw;
-  border-radius: 6px;
+  padding: 3% 6%;
+  font-size: 120%; 
+   border-radius: 20vw;
+   min-width: 20%;
   cursor: pointer;
   transition: all 0.3s ease;
+   white-space: nowrap;
 }
 
 .btn-login:hover {
   background-color: #0056b3;
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.8% 2% rgba(0, 0, 0, 0.2);
 }
-
 
 .btn-login:active {
   transform: scale(0.98);
   background-color: #004494;
 }
-
-nav a {
-  margin-left: 0%;
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-  font-size: 0,9vw; /* un poco más grande */
-  transition: color 0.3s ease;
+nav {
+    display: flex;
+    gap: 10%; 
 }
 
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+}
 nav a:hover {
-  color: #0077ff;
+    color: #0077ff;
 }
 
 /* HERO */
@@ -93,11 +93,12 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 2.5vw; /* un tamaño equilibrado */
-    color: #fff; /* aseguramos que se vea */
-    margin: top 0;; /* pequeño margen superior */
-    margin-bottom: 3%;
+    font-size: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid white; /* línea blanca debajo */
+    padding-bottom: 8px; 
 }
+
 
 .hero p {
     max-width: 50%;
@@ -146,17 +147,35 @@ nav a:hover {
 
 /* GALERÍA */
 .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 4.1%;
-    padding: 5%;
+  display: flex;              
+  justify-content: center;    
+  gap: 20px;                 
+  padding: 20px;
+  flex-wrap: nowrap;         
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;    
+  align-items: center;        
+  width: 250px;              
+}
+
+.gallery-text {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .card {
-    width: 15%;
-    background: #ddd;
-    border-radius: 3%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
+
 /*Formulario Login*/
 .FormularioLogin{
     border: 6px solid, rgba(0, 154, 168, 0.74);
@@ -172,6 +191,8 @@ h1{ font-family:Old English Text MT;
     margin-bottom: 20px;
     margin-top: 20px;
     text-align: center;
+    border-bottom: 2px solid white; /* línea blanca debajo */
+  padding-bottom: 8px; 
 }
 p1{ font-family: Candara Light;
 
@@ -236,18 +257,12 @@ h2{
   
 }
 
-.contact-bodycontact.html{ /* fondo*/
-    font-family: Arial, sans-serif;
-    background: #1e2c3a;
-    color: #ffffff;
-}
-
 #formulariocontacto form{/* formulario completo  */
      border: 6px solid transparent;
      border-radius: 10px;
      background:
-    linear-gradient(90deg, rgb(95, 95, 95), #6a6a6a, rgb(95, 95, 95)) border-box;
-    width: 1400px;
+    linear-gradient(90deg, rgb(15, 26, 108), #1d1a53, rgb(51, 53, 103)) border-box;
+    width: 1000px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -255,7 +270,8 @@ h2{
     justify-content: center; 
     align-items: center;   
     height: 500px;
-    margin-left: 230px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 #formulariocontacto form .campo,textarea{
@@ -343,11 +359,27 @@ h3{
 }
 
 .btn_enviar {
-    border: none; 
-    color: rgb(0, 0, 0); 
-    padding: 14px 28px; 
-    cursor: pointer; 
-    border-radius: 5px; 
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none; 
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_enviar:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_enviar:active {
+  transform: scale(0.98);
+  background-color: #004494;
 }
 
 /* FOOTER */
@@ -385,7 +417,7 @@ h3{
   margin-top: 3%;
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 30%;
 }
 
 .footer-redes img {
@@ -419,28 +451,30 @@ h3{
 }
 
 /* SECCIÓN DERECHA */
-.footer-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-right li {
-  margin-bottom: 2%;
+.footer-right {
+  display: flex;
+  align-items: center;  /* centra verticalmente */
+  justify-content: flex-end; /* alinea todo a la derecha */
+  gap: 10px; /* espacio entre imagen y texto */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1vw;
 }
 
 .footer-right a {
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
+  color: inherit;
   transition: color 0.3s;
-  font-size: 1vw;
 }
 
 .footer-right a:hover {
   color: #ffffff;
 }
 
+.footer-right img {
+  width: 15%; /* tamaño pequeño */
+  height: auto;
+}
 /* AJUSTE RESPONSIVE */
 @media (max-width: 768px) {
   .footer-container {
