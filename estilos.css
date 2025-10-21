@@ -3,12 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Univers;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
-   background: linear-gradient(180deg, rgb(16, 19, 49), #191f58, rgb(52, 36, 139));
+    background:#1e2c3a;
     color: #ffffff;
+    font-family: Univers;
 }
 
 /* HEADER */
@@ -53,12 +56,12 @@ header {
   text-decoration: none;
   border: none;
   padding: 3% 6%;
-  font-size: 120%; 
-   border-radius: 20vw;
-   min-width: 20%;
+  font-size: 120%;
+  border-radius: 20vw;
+  min-width: 20%;
   cursor: pointer;
   transition: all 0.3s ease;
-   white-space: nowrap;
+  white-space: nowrap;
 }
 
 .btn-login:hover {
@@ -92,11 +95,8 @@ nav a:hover {
     padding: 1% 5%;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid white; /* línea blanca debajo */
-    padding-bottom: 8px; 
+h1 {
+    font-size: 40px; 
 }
 
 
@@ -104,7 +104,9 @@ nav a:hover {
     max-width: 50%;
     margin: auto;
     color: #ffffff;
-    font-family: Candara Light;
+    font-size: 18px;
+    max-width: 50%;
+    letter-spacing: 3px;
 }
 
 /* CARRUSEL */
@@ -173,26 +175,130 @@ nav a:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
+
 }
+
+/*Link a traves de un boton a */
+
+.VerMas{
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+  padding: 1% 5%;
+  text-decoration-color: #0077ff;
+}
+
+.VerMas p{
+    max-width: 50%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+#btn-VerMas{
+  background-color: #007bff;
+  color: white;
+  padding: 20px 30px; /*Espacio entre el texto y el borde del button */ 
+  font-size: 120%;
+  border-radius: 10vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/*REFERENCIAS COMERCIALES*/
+
+#MACHbiografia{
+    max-width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 3px;  
+}
+
+h4{
+  text-align:auto;
+  margin: center;
+  margin-left: 20%;
+  font-size: 25px;
+  font-family: Univers; 
+}
+
+.Tabla{
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+table {
+  table-layout: fixed;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+}
+
+td, th {
+  width: 5vw;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+  background-color: #7c7c7c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Formulario Login*/
 .FormularioLogin{
     border: 6px solid, rgba(0, 154, 168, 0.74);
     border-style: groove;
-    margin: 100px;
-    margin-left: 550px;
+    margin:center;
+    margin-left: 30%;
+    margin-bottom: 20%;
+    margin-top: 10%;
     text-align: center;
-    width: 750px;
-    height: 300px;
+    width: 40%;
+    height: 30%;
 }
 
 h1{ font-family:Old English Text MT;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 2%;
+    margin-top: 2%;
     text-align: center;
-    border-bottom: 2px solid white; /* línea blanca debajo */
-  padding-bottom: 8px; 
+    padding-bottom: 3%; 
 }
 p1{ font-family: Candara Light;
 
@@ -253,7 +359,8 @@ h2{
   gap: 50px;    
   margin-top: 60px;       
   display: flex;
-   border-bottom: 2px solid white; /* línea blanca */
+  border-bottom: 2px solid white; /* línea blanca */
+  font-family: Univers;
   
 }
 
@@ -296,14 +403,15 @@ h2{
     margin-top: 30px;
 }
 .contacto2 {
-   padding-top: 0.5%; 
-    display: flex;
+  padding-top: 0.5%; 
+  display: flex;
   justify-content: center;     
   align-items: center;        
   gap: 3%;                    
   flex-wrap: wrap;            
   padding: 2%;
   border-radius: 1%;
+  font-family: Univers;
 }
 .info p {
   font-size: 1.8rem;
@@ -353,9 +461,9 @@ h2{
 }
   
 h3{
-    font-family: Candara Light;
+    font-family: Univers;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 15%;
 }
 
 .btn_enviar {
@@ -387,7 +495,7 @@ h3{
   background-color: #313131;
   color: #ffffff;
   padding: 2% 0;
-  margin-top: 25%;
+  margin-top: 20%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -404,13 +512,8 @@ h3{
 /* SECCIÓN IZQUIERDA */
 .footer-left h3 {
   font-size: 1.3vw;
-  font-weight: 600;
   color: #ffffff;
-  line-height: 1.3;
-}
-
-.footer-left h3 span {
-  color: #ffffff;
+  font-family: Univers;
 }
 
 .footer-redes {
@@ -475,6 +578,7 @@ h3{
   width: 15%; /* tamaño pequeño */
   height: auto;
 }
+
 /* AJUSTE RESPONSIVE */
 @media (max-width: 768px) {
   .footer-container {
@@ -506,7 +610,9 @@ h3{
   text-align: center;
   margin-top: auto;
   font-size:larger;
+  font-family: Univers;
 }
+
 
 .clientesReseña{
   border-style: solid;
@@ -515,6 +621,9 @@ h3{
   margin-left: 3%;
   margin-bottom: 3%;
   margin-top: 3%;
+  
+  
+  
 }
 
 .clientesReseña img{
@@ -525,9 +634,7 @@ h3{
   margin-bottom: 5%;
   margin-left: 25%; 
   margin-top: 5%; 
-  align-items: center;
-  text-align: center;
-  flex-direction: column; 
+   
 }  
 
 .Opinion{
