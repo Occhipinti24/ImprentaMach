@@ -25,22 +25,21 @@ header {
 }
 
 .logo {
-    width: 18%;
-    height: 4.1%;
-    border-radius: 0.7%;
+    width: 25%;
+    height: 5%;
 }
 /* Barra de búsqueda */
 .search {
-   display: flex;
+  display: flex;
   justify-content: start; /* o 'flex-start' si fuera flexbox */
-  padding: 20px;
+  padding: 5%;
 }
 
 .search-bar {
-  width: 90%;                
-  height: 1vw;
-  
-  font-size: 1.2vw;
+  margin: center;
+  width: 120%;                
+  height: 20%;
+  font-size: 1vw;
   border-radius: 20vw;      
 }
 
@@ -200,15 +199,12 @@ h1 {
 #btn-VerMas {
   background-color: #007bff;
   color: white;
-  padding: 20px 30px; 
+  padding: 20px 30px; /*Espacio entre el texto y el borde del button */ 
   font-size: 120%;
   border-radius: 10vw;
   cursor: pointer;
-  transition: all 0.3s ease;
   white-space: nowrap;
-  border: none; 
 }
-
 /*REFERENCIAS COMERCIALES*/
 
 #MACHbiografia{
@@ -255,44 +251,16 @@ tr:nth-child(even) {
   background-color: #7c7c7c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Formulario Login*/
 .FormularioLogin{
-    border: 6px solid, rgba(0, 154, 168, 0.74);
+    border: 6px solid, #009aa8bd;
     border-style: groove;
     margin:center;
-    margin-left: 30%;
+    margin-left: 32%;
     margin-bottom: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
-    width: 40%;
-    height: 30%;
+    width: 35%;
 }
 
 h1{ font-family:Old English Text MT;
@@ -301,30 +269,31 @@ h1{ font-family:Old English Text MT;
     text-align: center;
     padding-bottom: 3%; 
 }
-p1{ font-family: Candara Light;
 
+p1{ font-family: Univers;
 }
 
 .formularioL{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Candara Light;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: Univers;
     font-size: large;
 }
 
-input[type=text] {
-  width: 250px;
-  padding: 12px;
-  margin: 10px 0;
+#gmail {
+  width: 50%;
+  padding: 10px;
+  margin: 5% 0;
   box-sizing: border-box;
   border: 2px solid lab(55.35% 2.63 0.93);
   border-radius: 8px;
+  margin-top: 5%;
 }
 
-input[type=password] {
-  width: 250px;
-  padding: 12px;
-  margin: 10px 0;
+#password {
+  width: 50%;
+  padding: 10px;
+  margin: 5% 0;
   box-sizing: border-box;
   border: 2px solid lab(55.35% 2.63 0.93);
   border-radius: 8px;
@@ -333,21 +302,31 @@ input[type=password] {
   button[type=submit] {
   border: none; 
   color: rgb(0, 0, 0); 
-  padding: 14px 28px; 
+  padding: 3% 3%; 
   cursor: pointer; 
-  border-radius: 5px; 
+  border-radius: 30px; 
+  margin-bottom: 3%;
+  background-color:#009aa8bd;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  font-size:medium;
+  color: #ffffff;
 }
 
  button[type=reset] {
   border: none; 
   color: rgb(3, 3, 3); 
-  padding: 14px 28px; 
+  padding: 3% 3%; 
   cursor: pointer; 
-  border-radius: 5px; 
+  border-radius: 30px;
+  margin-left: 2%; 
+  background-color:#009aa8bd;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  font-size:medium;
+  color: #ffffff;
 }
 
- hr{margin-bottom: 20px;
-    margin-top: 20px;
+ hr{margin-bottom: 5%;
+    margin-top: 5%;
   }
 
 /*Formulario Contact */ 
@@ -589,16 +568,29 @@ h3{
   margin-top: auto;
   font-size:larger;
   font-family: Univers;
+  font-size: x-large;
 }
 
+.ClientesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 💥 3 columnas iguales */
+  gap: 3%;                             /* Espaciado entre tarjetas */
+  justify-items: center;                 /* Centra el contenido dentro de cada celda */
+  margin: 5% auto;
+  width: 90%;
+}
 
 .clientesReseña{
   border-style: solid;
   border: 3%;
-  width: 25%;
+  width: 100%;
+  max-width: 500px;           /* Tamaño máximo para mantener proporción */
+  text-align: center;
+  padding: 10px;
   margin-left: 3%;
   margin-bottom: 3%;
   margin-top: 3%;
+  background-color:#046fbb ;
 }
 
 .clientesReseña img{
@@ -616,32 +608,14 @@ h3{
   text-align:center;
 }
 
-.clientesColumna2{
-  border-style: solid;
-  border: 3%;
-  width: 25%;
-  margin-left: 71%;
-  margin-bottom: 3%;
-  display: flexbox;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (max-width: 900px) {
+  .ClientesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.clientesColumna2 img{
-  width: 50%;
-  display: block; 
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 10px;  
-  margin-bottom: 5%;
-  margin-left: 25%; 
-  margin-top: 5%; 
-  align-items: center;
-  text-align: center;
-  flex-direction: column; 
-}  
-
-.OpinionColumna2{
-  margin-left: auto;
-  text-align:center;
+@media (max-width: 600px) {
+  .ClientesContainer {
+    grid-template-columns: 1fr;
+  }
 }
-
