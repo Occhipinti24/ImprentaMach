@@ -1,17 +1,3 @@
-/*
-let=NombreUsuario =prompt("Ingrese su nombre");
-let=Password;
-
-
-if (NombreUsuario == ""){
-    alert("No ingresaste ningun dato");
-} else {
-    alert("Ingresaste: " + NombreUsuario);
-}
-*/
-
-//Formulario Login
-//function BienvenidaMach() //Cuando Tomi pase su codigo 
 
 document.getElementById("FormularioL").addEventListener("submit", function(event){
     event.preventDefault();
@@ -28,6 +14,7 @@ if (mail && password) { //valida que ambos campos esten completos
     console.log(`password: ${mail}`)
     console.log("todo correcto")
     alert ("Bienvenido a Imprenta MACH!")
+    this.reset()
 }else{
     console.log("Algunos campos estan vacios");
     alert("Por favor completa todos los campos");

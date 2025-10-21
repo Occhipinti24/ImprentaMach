@@ -4,33 +4,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Univers;
-    
 }
 
 body {
-    font-family: Arial, sans-serif;
     background: linear-gradient(90deg, rgb(27, 28, 34), #282b36, rgb(114, 114, 114)) border-box;
     color: #ffffff;
     font-family: Univers;
 }
 
 /* HEADER */
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
   padding: 10px 20px;
   background-color: #f5f5f5;
-  gap: 20px; /* añade separación entre los bloques del header */
+  gap: 20px;  /* añade separación entre los bloques del header */
 }
 
 /* LOGO */
+
 .logo {
   width: 6vw; 
   height: auto;
 }
 
-/* CONTENEDOR DE BÚSQUEDA */
+/* CONTENEDOR DE BARRA DE BUSQUEDA BÚSQUEDA */
+
 .search-container {
   flex: 1; 
   display: flex;
@@ -38,6 +39,7 @@ header {
 }
 
 /* BARRA DE BÚSQUEDA */
+
 .search-bar {
   width: 80%;
   max-width: 600px;
@@ -58,7 +60,9 @@ header {
 .search-bar:focus {
   box-shadow: 0 0 0.8vw rgba(0, 123, 255, 0.5);
 }
-/* boton de inicio sesion */
+
+/*BOTON DE INICIO DE SECION*/
+
 .btn-login {
   display: inline-flex;
   background-color: #007bff;
@@ -81,7 +85,8 @@ header {
   transform: scale(0.98);
   background-color: #004494;
 }
-/* menu barra */
+
+/*MENU*/
 
 nav {
   display: flex;
@@ -99,6 +104,7 @@ nav a:hover {
 }
 
 /* HERO */
+
 .hero {
     text-align: center;
     padding: 1% 5%;
@@ -107,7 +113,6 @@ nav a:hover {
 h1 {
     font-size: 40px; 
 }
-
 
 .hero p {
     max-width: 50%;
@@ -119,6 +124,7 @@ h1 {
 }
 
 /* CARRUSEL */
+
 .carrusel {
   width: 40%;           /* ocupa el 80% del contenedor/pantalla */     /* ajusta altura proporcional */
   aspect-ratio: 600/350; /* mantiene la proporción original */
@@ -131,7 +137,7 @@ h1 {
 
 .CarruselImg {
   display: flex;
-  width: 300%;               /* 3 imágenes */
+  width: 300%;               
   animation: cambio 9s infinite;
 }
 
@@ -151,12 +157,11 @@ h1 {
   67%  { transform: translateX(-66.6666%); } /*translatex mueve el bloque de imagenes completo, no los margenes*/
   100% { transform: translateX(-66.6666%); }
 }
-
+/*cada porcentaje es lo q lo mantiene visible del tiempo total, ejemplo 20% serian 2.4 segundos
+si la animacion dura 12 segundos y el margin left mueve el grupo de imagenes */
      
-     /*cada porcentaje es lo q lo mantiene visible del tiempo total, ejemplo 20% serian 2.4 segundos
-     si la animacion dura 12 segundos y el margin left mueve el grupo de imagenes */
-
 /* GALERÍA */
+
 .gallery {
   display: flex;              
   justify-content: center;    
@@ -187,7 +192,7 @@ h1 {
 
 }
 
-/*Link a traves de un boton a */
+/*ACCESO DIRECTO A RESEÑAS*/
 
 .VerMas{
   margin: auto;
@@ -215,6 +220,7 @@ h1 {
   cursor: pointer;
   white-space: nowrap;
 }
+
 /*REFERENCIAS COMERCIALES*/
 
 #MACHbiografia{
@@ -242,7 +248,6 @@ h4{
 
 table {
   table-layout: fixed;
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 70%;
   border-collapse: collapse;
@@ -261,7 +266,211 @@ tr:nth-child(even) {
   background-color: #7c7c7c;
 }
 
-/*Formulario Login*/
+/*CONTACTOS*/ 
+
+h2{
+  width: 60%;                      
+  margin: 40px auto;                
+  font-size: 2rem;
+  padding-bottom: 10px;
+  gap: 50px;    
+  margin-top: 60px;       
+  display: flex;
+  border-bottom: 2px solid white; 
+  font-family: Univers;
+  
+}
+
+/* FORMULARIO CONTACTOS*/
+
+#formulariocontacto form{
+  border: 0.6% solid transparent; 
+  border-radius: 1%;
+  background: rgba(186, 186, 186, 0.3); 
+  max-width: 65%; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2%; 
+  justify-content: center;
+  align-items: center;
+  padding: 5%; 
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+}
+
+#formulariocontacto form .campo,textarea{
+    width: 50%;
+    padding:15px 10px ;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#formulariocontacto .container form .input{
+ background-color: #007BFF; 
+  color: white;            
+  padding: 12px 20px;     
+  font-size: 16px;  
+  border-radius: 8px;                  
+}
+
+/* DATOS DE CONTACTO*/
+
+.contacto2 {
+  padding-top: 0.5%; 
+  display: flex;
+  justify-content: center;     
+  align-items: center;        
+  gap: 3%;                    
+  flex-wrap: wrap;            
+  padding: 2%;
+  border-radius: 1%;
+  font-family: Univers;
+}
+
+.info p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  border-bottom: 2px solid white; 
+  padding-bottom: 8px;           
+  margin-bottom: 10px;
+}
+
+.info {
+  width: 30%;
+  text-align: left;
+  font-family:Universe;
+  letter-spacing: -0.5px;
+}
+
+.mapa-cuadrada {
+  position: relative;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  display: flex;              
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-cuadrada iframe {
+ width: 100%;   
+  height: 100%;
+  border: 0;
+  border-radius: 2%;
+} 
+
+.contacto .info {
+  display: flex;          
+  align-items: flex-start; 
+  justify-content: space-between;
+  gap: 20px;              
+  flex-wrap: nowrap;       
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.contacto2 iframe {
+  flex: 2;                    
+  max-width: 100%;
+  border-radius: 10px;
+}
+  
+h3{
+    font-family: Univers;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.btn_enviar {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none; 
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_enviar:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn_enviar:active {
+  transform: scale(0.98);
+  background-color: #004494;
+}
+
+/*CLIENTES*/
+
+#SubtituloClientes{
+  text-align: center;
+  margin-top: auto;
+  font-size:larger;
+  font-family: Univers;
+  font-size: x-large;
+}
+
+.ClientesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 3%;                            
+  justify-items: center;              
+  margin: 5% auto;
+  width: 90%;
+}
+
+.clientesReseña{
+  border-style: solid;
+  border: 3%;
+  width: 100%;
+  max-width: 500px;           /* Tamaño máximo para mantener proporción */
+  text-align: center;
+  padding: 10px;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  background-color:#046fbb ;
+}
+
+.clientesReseña img{
+  width: 50%;
+  display: block; 
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;  
+  margin-bottom: 5%;
+  margin-left: 25%; 
+  margin-top: 5%;  
+}  
+
+.Opinion{
+  margin-left: auto;
+  text-align:center;
+}
+
+/*AJUSTE RESPONSIVE*/
+
+@media (max-width: 900px) { 
+  .ClientesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ClientesContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*FORMULARIO LOGIN*/
+
 .FormularioLogin{
     border: 6px solid, #009aa8bd;
     border-style: groove;
@@ -341,148 +550,14 @@ p1{ font-family: Univers;
     margin-top: 5%;
   }
 
-/*Formulario Contact */ 
-
-h2{
-  width: 60%;                      
-  margin: 40px auto;                
-  font-size: 2rem;
-  padding-bottom: 10px;
-  gap: 50px;    
-  margin-top: 60px;       
-  display: flex;
-  border-bottom: 2px solid white; 
-  font-family: Univers;
-  
-}
-/* formulario contacto */
-#formulariocontacto form{
-  border: 0.6% solid transparent; 
-  border-radius: 1%;
-  background: rgba(186, 186, 186, 0.3); 
-  max-width: 65%; 
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2%; 
-  justify-content: center;
-  align-items: center;
-  padding: 5%; 
-  margin: 0 auto;
-  backdrop-filter: blur(5px);
-}
-
-#formulariocontacto form .campo,textarea{
-    width: 50%;
-    padding:15px 10px ;
-    border: 1px solid #dbdbdb;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-#formulariocontacto .container form .input{
- background-color: #007BFF; 
-  color: white;            
-  padding: 12px 20px;     
-  font-size: 16px;  
-  border-radius: 8px;                  
-}
-/* Datos de Contacto*/
-.contacto2 {
-  padding-top: 0.5%; 
-  display: flex;
-  justify-content: center;     
-  align-items: center;        
-  gap: 3%;                    
-  flex-wrap: wrap;            
-  padding: 2%;
-  border-radius: 1%;
-  font-family: Univers;
-}
-.info p {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  border-bottom: 2px solid white; 
-  padding-bottom: 8px;           
-  margin-bottom: 10px;
-}
-.info {
- width: 30%;
-  text-align: left;
-  font-family: Arial, sans-serif;
-  letter-spacing: -0.5px;
-}
-
-.mapa-cuadrada {
-  position: relative;
-  width: 25%;
-  aspect-ratio: 1 / 1;
-  display: flex;              
-  justify-content: center;
-  align-items: center;
-}
-
-.mapa-cuadrada iframe {
- width: 100%;   
-  height: 100%;
-  border: 0;
-  border-radius: 2%;
-} 
-.contacto .info {
-  display: flex;          
-  align-items: flex-start; 
-  justify-content: space-between;
-  gap: 20px;              
-  flex-wrap: nowrap;       
-}
-
-.info a:hover {
-  text-decoration: underline;
-}
-
-.contacto2 iframe {
-  flex: 2;                    
-  max-width: 100%;
-  border-radius: 10px;
-}
-  
-h3{
-    font-family: Univers;
-    text-align: center;
-    margin-top: 15%;
-}
-
-.btn_enviar {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none; 
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn_enviar:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn_enviar:active {
-  transform: scale(0.98);
-  background-color: #004494;
-}
-
 /* FOOTER */
+
 .footer {
   background-color: #313131;
   color: #ffffff;
   padding: 2% 0;
   margin-top: 20%;
-  font-family: 'Poppins', sans-serif;
+  font-family:Universe;
 }
 
 .footer-container {
@@ -496,6 +571,7 @@ h3{
 }
 
 /* SECCIÓN IZQUIERDA */
+
 .footer-left h3 {
   font-size: 1.3vw;
   color: #ffffff;
@@ -521,6 +597,7 @@ h3{
 }
 
 /* SECCIÓN CENTRAL */
+
 .footer-center {
   text-align: center;
   max-width: 30%;
@@ -540,7 +617,7 @@ h3{
 }
 
 /* SECCIÓN DERECHA */
-/* Qr arca */
+
 .image-Arca{
   width: 10%;
   height: auto;
@@ -548,8 +625,8 @@ h3{
   margin-top: 3%;
 }
 
-
 /* AJUSTE RESPONSIVE */
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -571,65 +648,5 @@ h3{
 
   .footer-redes img {
     width: 6vw;
-  }
-}
-
-/*Apartado clientes */
-
-#SubtituloClientes{
-  text-align: center;
-  margin-top: auto;
-  font-size:larger;
-  font-family: Univers;
-  font-size: x-large;
-}
-
-.ClientesContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 💥 3 columnas iguales */
-  gap: 3%;                             /* Espaciado entre tarjetas */
-  justify-items: center;                 /* Centra el contenido dentro de cada celda */
-  margin: 5% auto;
-  width: 90%;
-}
-
-.clientesReseña{
-  border-style: solid;
-  border: 3%;
-  width: 100%;
-  max-width: 500px;           /* Tamaño máximo para mantener proporción */
-  text-align: center;
-  padding: 10px;
-  margin-left: 3%;
-  margin-bottom: 3%;
-  margin-top: 3%;
-  background-color:#046fbb ;
-}
-
-.clientesReseña img{
-  width: 50%;
-  display: block; 
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 10px;  
-  margin-bottom: 5%;
-  margin-left: 25%; 
-  margin-top: 5%;  
-}  
-
-.Opinion{
-  margin-left: auto;
-  text-align:center;
-}
-
-/* Ajuste responsive*/
-@media (max-width: 900px) { 
-  .ClientesContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .ClientesContainer {
-    grid-template-columns: 1fr;
   }
 }
