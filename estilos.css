@@ -26,7 +26,7 @@ header {
 
 /* LOGO */
 .logo {
-  width: 100px; 
+  width: 6vw; 
   height: auto;
 }
 
@@ -40,9 +40,9 @@ header {
 /* BARRA DE BÚSQUEDA */
 .search-bar {
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 10px 15px;
-  font-size: 1rem;
+  font-size: 1vw;
   border: 2px solid #ccc;
   border-radius: 25px;
   outline: none;
@@ -307,6 +307,7 @@ p1{ font-family: Univers;
   box-sizing: border-box;
   border: 2px solid lab(55.35% 2.63 0.93);
   border-radius: 8px;
+  margin-top: 5%;
 }
 
   button[type=submit] {
@@ -315,7 +316,7 @@ p1{ font-family: Univers;
   padding: 3% 3%; 
   cursor: pointer; 
   border-radius: 30px; 
-  margin-bottom: 3%;
+  margin-bottom: 5%;
   background-color:#009aa8bd;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
   font-size:medium;
@@ -328,7 +329,8 @@ p1{ font-family: Univers;
   padding: 3% 3%; 
   cursor: pointer; 
   border-radius: 30px;
-  margin-left: 2%; 
+  margin-bottom: 5%;
+  margin-left: 5%; 
   background-color:#009aa8bd;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
   font-size:medium;
@@ -530,7 +532,7 @@ h3{
 }
 
 .footer-center p {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   line-height: 1.6;
   border-left: 0.2vw solid #ffffff;
   border-right: 0.2vw solid #ffffff;
@@ -543,6 +545,7 @@ h3{
   width: 10%;
   height: auto;
   border-radius: 9px;
+  margin-top: 3%;
 }
 
 
@@ -618,7 +621,8 @@ h3{
   text-align:center;
 }
 
-@media (max-width: 900px) {
+/* Ajuste responsive*/
+@media (max-width: 900px) { 
   .ClientesContainer {
     grid-template-columns: repeat(2, 1fr);
   }
